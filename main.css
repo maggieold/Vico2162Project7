@@ -1,0 +1,316 @@
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: skyblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    /* body text */
+    background-image: url("background.png")
+}
+
+header {
+    background-color: white;
+    opacity: 100%;
+    margin-top: 55px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+
+}
+
+header h1 {
+    width: 360px;
+    margin-left: 30px;
+    font-size: 2.5em
+}
+
+h1 {
+    /* header font*/
+font-family: rig-solid-bold-halftone, sans-serif;
+font-weight: 700;
+font-style: normal;
+    text-align: center;
+    
+}
+
+
+h1 a:hover {
+    border-color: #C3D490;
+    color: lightpink;
+}
+
+h2 {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: grey;
+    font-size: 1.4em;
+    font-family:'Quicksand', sans-serif;
+    opacity: 55%;
+    color: white;
+    
+    
+
+}
+
+
+
+nav a {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .25s;
+    align-content: left;
+}
+
+nav a:hover {
+    color: lightpink;
+    border-color: lightcoral;
+}
+
+.display {
+    display: flex;
+    width: 100%;
+
+}
+
+#desktop-ul {
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+#desktop li {
+    font-family: 
+    font-size: 1.5em;
+    align-items: left;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+}
+
+#main_content p {
+    padding: 20px 30px 20px 30px;
+    text-align: left;
+    width: 80%;
+}
+ 
+}
+
+p {
+    font-size: 1.1em;
+    color: #2a2a2a;
+    font-family: 'Crimson Pro', serif;
+
+}
+
+/* -------------- PRINCIPLES PAGE --------*/
+
+#main-inside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: bold;
+    
+
+    /* add texture!!*/
+
+}
+
+.title-principles {
+    width: 100%;
+    font-size: 1.75em;
+    color: whitesmoke;
+    font-family:'Quicksand', sans-serif;
+
+    background-color:grey;
+    opacity: 55%;
+}
+
+.principle {
+    background-color: whitesmoke;
+    width: 25%;
+    margin: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 1em;
+}
+
+.principle2 {
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 3px solid #c3d490;
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    height: 300px;
+    font-size: .6em
+        
+}
+
+.principle h3 {
+    text-align: center;
+}
+
+.principle h3 a:hover{
+    color: lightpink;
+    border-color: lightcoral;
+}
+
+.principle-img {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.principle-img img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+
+}
+
+.principle2 p {
+    text-align: center;
+}
+
+
+
+/* -------------- MOBILE MENU --------------- */
+
+@media screen and (max-width: 767px) {
+
+    #desktop {
+        display: none;
+    }
+
+    .display {
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+
+    #trigger {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 28px;
+        right: 30px;
+    }
+
+    #mobile ul {
+        background-color: #F0F0F0;
+        margin: 10px 0 10px 0;
+        padding-bottom: 10px;
+    }
+
+    #mobile li {
+        padding: 10px;
+        border-bottom: 3px solid #FFF;
+        width: 80%;
+    }
+
+    .principle {
+        width: 90%;
+        margin: 12px;
+        border-radius: 10px;
+    }
+
+}
+
+.starkey-hearing {
+    width: 100%;
+    background-color: whitesmoke;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+
+    /* ------------ TABLET -------------- */
+    @media screen and (max-width: 1280px) and (min-width: 768px) {
+
+        .principle {
+            width: 40%;
+        }
+
+    }
+
+    /* ------------- DESKTOP ------------ */
+
+    @media screen and (min-width: 768px) {
+
+        #mobile {
+            display: none;
+        }
+
+/*---------------*/
+      
+.starkey-hearing {
+    align-content: center;
+    align-items: center;
+    display: flex;   
+    }
